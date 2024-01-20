@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apes and Bananas Website</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Apes and Bananas Website</h1>
+    </header>
+
+    <section>
+        <h2>About Apes</h2>
+        <p>Apes are highly intelligent primates known for their complex social structures and behaviors.</p>
+    </section>
+
+    <section>
+        <h2>Banana Facts</h2>
+        <p>Bananas are a popular fruit that is rich in potassium and other essential nutrients.</p>
+    </section>
+
+    <section id="interactive-section">
+        <h2>Interactive Features</h2>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <button onclick="startQuiz()">Start Quiz</button>
+        <button onclick="showGallery()">Show Photo Gallery</button>
+        <button onclick="showInteraction()">Ape-Banana Interaction</button>
+        <button onclick="showBananaGame()">Banana Catch Game</button>
+    </section>
+
+    <section id="quiz-container">
+        <h2>Ape and Banana Quiz</h2>
+        <p>What is the largest species of ape?</p>
+        <input type="text" id="quiz-answer">
+        <button onclick="checkAnswer()">Check Answer</button>
+        <p id="quiz-feedback"></p>
+    </section>
+
+    <section id="photo-gallery">
+        <h2>Photo Gallery</h2>
+        <div id="gallery-images">
+            <!-- Add more images as needed -->
+            <img src="images/ape1.jpg" alt="Ape 1">
+            <img src="images/banana1.jpg" alt="Banana 1">
+            <img src="images/ape2.jpg" alt="Ape 2">
+            <img src="images/banana2.jpg" alt="Banana 2">
+        </div>
+    </section>
+
+    <section id="interaction-container">
+        <h2>Ape-Banana Interaction</h2>
+        <div id="interaction-content">
+            <img src="images/ape3.jpg" alt="Ape 3" id="interaction-ape">
+            <img src="images/banana3.jpg" alt="Banana 3" id="interaction-banana">
+        </div>
+        <button onclick="interact()">Interact</button>
+    </section>
+
+    <section id="banana-canvas-container">
+        <h2>Banana Catch Game</h2>
+        <canvas id="banana-canvas" width="800" height="400"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Apes and Bananas Website</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
